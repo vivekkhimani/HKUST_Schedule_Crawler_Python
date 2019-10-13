@@ -19,6 +19,13 @@
 - requests
 - validators
 - bs4
+
+## Usage/Testing Guide:
+- Navigate to the source_code directory located in the repository.
+- Install Python3 and required modules (specified above) if not done already.
+- Run the program in a terminal using standard Python commands. The program will ask for inputs, handle the erros, and return the results. 
+- Driver code has been added so this crawler can be imported and used in other programs by calling respective methods. 
+
 ## Time Required/Versions:
 - This is the second version of the project and it's complete with most of the testing done by myself. I will keep on testing and updating the app as and when I get reviews from my fellow classmates and students. This entire version is put together in less than 4 hours.
 
