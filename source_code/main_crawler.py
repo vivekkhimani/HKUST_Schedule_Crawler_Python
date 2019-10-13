@@ -166,7 +166,9 @@ def printDict(course_dictionary):
 					print(section_corr_list[counter],":",more_lols,end=" ")
 					counter+=1
 
-url,classN = gettingClassInput(gettingTermInput())
-#getClassDetails('https://w5.ab.ust.hk/wcq/cgi-bin/1910/subject/COMP','COMP4900')
+#Driver Code
+if __name__ == "__main__":
+	url,classN = gettingClassInput(gettingTermInput())
+	#getClassDetails('https://w5.ab.ust.hk/wcq/cgi-bin/1910/subject/COMP','COMP4900')
 
-printDict(getClassDetails(url,classN))
+	printDict(getClassDetails(url,classN))
