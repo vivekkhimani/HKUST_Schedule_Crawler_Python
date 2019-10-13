@@ -15,6 +15,10 @@
 ## Tools Used:
 - The crawler has been primarily coded in Python3.6. The libraries included are - BeautifulSoup(v4) for crawling, requests, and validators for fetching and validating the webpage.
 
+## Modules Required (can be installed using pip):
+- requests
+- validators
+- bs4
 ## Time Required/Versions:
 - This is the second version of the project and it's complete with most of the testing done by myself. I will keep on testing and updating the app as and when I get reviews from my fellow classmates and students. This entire version is put together in less than 4 hours.
 
