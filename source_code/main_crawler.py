@@ -1,6 +1,6 @@
-import requests
 from bs4 import BeautifulSoup
 import validators
+from security import safe_requests
 
 
 
@@ -33,7 +33,7 @@ def gettingTermInput():
 				if validators.url(complete_url):
 					urlExist = True
 		try:
-			source_code = requests.get(complete_url)
+			source_code = safe_requests.get(complete_url)
 			if dataExist:
 				valid = True
 				return complete_url
@@ -78,7 +78,7 @@ def gettingClassInput(term_url):
 		new_term_url = term_url+"subject/"+class_split[0]
 		#print(new_term_url)
 		try:
-			source_code = requests.get(new_term_url)
+			source_code = safe_requests.get(new_term_url)
 		except:
 			print("INVALID SUBJECT SELECTION.")
 
@@ -100,7 +100,7 @@ def gettingClassInput(term_url):
 
 def getClassDetails(updated_class_url,class_name):
 	course_dict = {}
-	source_code = requests.get(updated_class_url)
+	source_code = safe_requests.get(updated_class_url)
 	plain_text = source_code.text
 	soup_object = BeautifulSoup(plain_text,"html.parser")
 
